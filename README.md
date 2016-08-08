@@ -28,7 +28,7 @@ It requires:
 Download the latest release and untar it. Then, run the typical
 sequence:
 
-    $ ./configure --prefix=<gstreamer-prefix> --with-msdk=<msdk-prefix>
+    $ ./configure --prefix=<gstreamer-prefix> --with-msdk-prefix=<msdk-prefix>
     $ make
     $ sudo make install
 
