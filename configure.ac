@@ -17,6 +17,9 @@ AM_INIT_AUTOMAKE([1.10])
 dnl enable mainainer mode by default
 AM_MAINTAINER_MODE([enable])
 
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+m4_ifdef([AM_COLOR_TESTS], [AM_COLOR_TESTS([yes])])
+
 dnl check for tools (compiler etc.)
 AC_PROG_CC
 AC_PROG_CXX
@@ -110,6 +113,8 @@ AC_ARG_WITH([msdk-prefix],
 
 if test "x$MSDK_PREFIX" != "x"; then
 dnl only override if not already set
+  AC_CHECK_HEADER($MSDK_PREFIX/include/mfxvideo.h, ,
+                  AC_MSG_ERROR(Unable to find Intel Media SDK (use --with-msdk-prefix).))
   if test "x$MSDK_CFLAGS" = "x" -a "x$MSDK_LIBS" = "x"; then
     dnl this is an educated guess, user can always override these
     MSDK_CFLAGS="-I$MSDK_PREFIX/include"
@@ -122,4 +127,3 @@ AC_SUBST(MSDK_LIBS)
 
 AC_CONFIG_FILES([Makefile src/Makefile])
 AC_OUTPUT
-
