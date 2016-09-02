@@ -44,8 +44,8 @@ Once the plugin has been installed you can verify if the elements exist:
       Name                     msdk
       Description              Intel Media SDK encoders
       Filename                 /home/msdk/gst/master/plugins/libgstmsdk.so
-      Version                  1.0.0
-      License                  LGPL
+      Version                  1.0.1
+      License                  BSD
       Source module            gst-msdk
       Binary package           Oblong
       Origin URL               http://oblong.com/
@@ -69,5 +69,5 @@ Encoding a simple video test source and saving it to a file.
 # License
 
 gst-mdk is freely available for download under the terms of the
-[GNU Lesser General Public License, version 2.0](https://www.gnu.org/licenses/old-licenses/lgpl-2.0.html
-"LGPLv2").
+[BSD3](https://github.com/Oblong/gst-msdk/blob/master/COPYING
+"COPING") License.
