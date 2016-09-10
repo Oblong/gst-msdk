@@ -54,9 +54,9 @@ plugin_init (GstPlugin * plugin)
   GST_DEBUG_CATEGORY_INIT (gst_msdkenc_debug, "msdkenc", 0, "msdkenc");
   GST_DEBUG_CATEGORY_INIT (gst_msdkh264enc_debug, "msdkh264enc", 0,
       "msdkh264enc");
-  GST_DEBUG_CATEGORY_INIT (gst_msdkh264enc_debug, "msdkh265enc", 0,
+  GST_DEBUG_CATEGORY_INIT (gst_msdkh265enc_debug, "msdkh265enc", 0,
       "msdkh265enc");
-  GST_DEBUG_CATEGORY_INIT (gst_msdkh264enc_debug, "msdkmpeg2enc", 0,
+  GST_DEBUG_CATEGORY_INIT (gst_msdkmpeg2enc_debug, "msdkmpeg2enc", 0,
       "msdkmpeg2enc");
   GST_DEBUG_CATEGORY_INIT (gst_msdkvp8enc_debug, "msdkvp8enc", 0,
       "msdkvp8enc");
