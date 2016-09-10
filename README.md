@@ -44,7 +44,7 @@ Once the plugin has been installed you can verify if the elements exist:
       Name                     msdk
       Description              Intel Media SDK encoders
       Filename                 /home/msdk/gst/master/plugins/libgstmsdk.so
-      Version                  1.0.1
+      Version                  1.0.2
       License                  BSD
       Source module            gst-msdk
       Binary package           Oblong
